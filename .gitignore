@@ -42,6 +42,5 @@ next-env.d.ts
 AGENTS.md
 CLAUDE.md
 src/app/layout.tsx
-src/app/components/ProductCard.tsx
 src/app/pages/OurStory.tsx
 src/app/pages/Products.tsx
