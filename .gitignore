@@ -41,7 +41,6 @@ yarn-error.log*
 next-env.d.ts
 AGENTS.md
 CLAUDE.md
-src/app/components/Footer.tsx
 src/app/layout.tsx
 src/app/components/ProductCard.tsx
 src/app/pages/Home.tsx
