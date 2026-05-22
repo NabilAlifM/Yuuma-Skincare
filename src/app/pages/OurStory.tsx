@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const FADE_IN = {
   initial: { opacity: 0, y: 30 },
@@ -140,7 +140,7 @@ export default function OurStory() {
             "Kulit sehat adalah investasi terbaik untuk dirimu."
           </h2>
           <Link 
-            to="/products"
+            href="/products"
             className="inline-block bg-warm-white text-nude-pink px-12 py-5 rounded-[100px] font-bold tracking-widest uppercase text-xs hover:bg-deep-brown hover:text-warm-white transition-all shadow-soft"
           >
             Kenali Produk Kami

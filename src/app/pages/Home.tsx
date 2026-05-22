@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 import { ArrowRight, Sparkles, Heart, ShieldCheck } from "lucide-react";
 import { PRODUCTS } from "../constants";
 import ProductCard from "../components/ProductCard";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const FADE_IN = {
   initial: { opacity: 0, y: 20 },
@@ -39,13 +39,13 @@ export default function Home() {
           </div>
           <div className="flex gap-6">
             <Link 
-              to="/products"
+              href="/products"
               className="bg-deep-brown text-white px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-nude-pink transition-all shadow-soft"
             >
               Explore Products
             </Link>
             <Link 
-              to="/story"
+              href="/story"
               className="border border-deep-brown text-deep-brown px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-cream-beige transition-all"
             >
               Our Journey
@@ -102,7 +102,7 @@ export default function Home() {
             <p className="text-lg text-deep-brown/80 leading-relaxed max-w-xl font-light">
               Yuuma lahir dari pengalaman klinik kecantikan bertahun-tahun. Kami percaya kesehatan kulit adalah investasi emosional terdalam bagi setiap orang.
             </p>
-            <Link to="/story" className="inline-block text-[11px] uppercase tracking-widest font-bold border-b-2 border-nude-pink pb-1 hover:text-nude-pink transition-all">
+            <Link href="/story" className="inline-block text-[11px] uppercase tracking-widest font-bold border-b-2 border-nude-pink pb-1 hover:text-nude-pink transition-all">
               Read Our Origin Story
             </Link>
           </div>
@@ -118,7 +118,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-serif text-deep-brown">Our Favorites</h2>
           </motion.div>
           <motion.div {...FADE_IN}>
-            <Link to="/products" className="text-deep-brown font-medium hover:text-nude-pink flex items-center space-x-2">
+            <Link href="/products" className="text-deep-brown font-medium hover:text-nude-pink flex items-center space-x-2">
               <span>View All Products</span>
               <ArrowRight size={16} />
             </Link>

@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Jost } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+// PERBAIKAN 1: Menambahkan /app/ agar mengarah ke folder src/app/components
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+// PERBAIKAN 2: Menghapus kelebihan tanda kutip (") di ujung baris
+// @ts-ignore: CSS import types may not be declared in this project setup
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -32,7 +35,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id" className={`${cormorant.variable} ${jost.variable}`}>
-      <body className="flex flex-col min-h-screen">
+      {/* PERBAIKAN 3: Memindahkan class antialiased ke body untuk font yang lebih clean/halus */}
+      <body className="flex flex-col min-h-screen antialiased">
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
