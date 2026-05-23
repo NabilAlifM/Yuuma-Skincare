@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles, Heart, ShieldCheck } from "lucide-react";
@@ -5,10 +7,7 @@ import { PRODUCTS } from "@/app/constants";
 import ProductCard from "@/app/components/ProductCard";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Home",
-  description: "Yuuma Skincare — Your Skin, Your Story.",
-};
+
 
 const FADE_IN = {
   initial: { opacity: 0, y: 20 },

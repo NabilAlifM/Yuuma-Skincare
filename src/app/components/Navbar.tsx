@@ -1,3 +1,4 @@
+"use client";
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -7,7 +8,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation"
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import { Menu, X, ShoppingBag, Search } from "lucide-react";
 
 export default function Navbar() {
