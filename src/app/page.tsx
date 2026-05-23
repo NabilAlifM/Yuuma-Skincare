@@ -6,6 +6,8 @@ import { ArrowRight, Sparkles, Heart, ShieldCheck } from "lucide-react";
 import { PRODUCTS } from "@/app/constants";
 import ProductCard from "@/app/components/ProductCard";
 import Link from "next/link";
+import Image from "next/image";
+
 
 export const metadata: Metadata = {
   title: "Home | Yuuma Skincare",
@@ -64,7 +66,7 @@ export default function HomePage() {
         >
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1596462502278-27bfad450216?auto=format&fit=crop&q=80&w=1200" 
+              src="../public/SetSkincare.jpeg" 
               alt="Soft skincare mood" 
               className="w-full h-[650px] object-cover"
               referrerPolicy="no-referrer"
