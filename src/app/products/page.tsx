@@ -11,7 +11,7 @@ import { Search, MapPin, BadgeCheck, FlaskConical } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Produk",  // jadi: "Produk | Yuuma Skincare"
+  title: "Produk | Yuuma Skincare",  
   description: "Rangkaian skincare premium Yuuma berbasis bahan klinis alami Indonesia.",
 };
 

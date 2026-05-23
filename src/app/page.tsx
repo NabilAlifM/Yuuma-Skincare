@@ -7,7 +7,10 @@ import { PRODUCTS } from "@/app/constants";
 import ProductCard from "@/app/components/ProductCard";
 import Link from "next/link";
 
-
+export const metadata: Metadata = {
+  title: "Home | Yuuma Skincare",
+  description: "Yuuma Skincare — Your Skin, Your Story.",
+};
 
 const FADE_IN = {
   initial: { opacity: 0, y: 20 },
