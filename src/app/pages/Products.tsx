@@ -5,7 +5,7 @@
 
 import { motion } from "motion/react";
 import { useState } from "react";
-import { PRODUCTS } from "../constants";
+import { PRODUCTS } from "@/app/constants";
 import ProductCard from "../components/ProductCard";
 import { Search, MapPin, BadgeCheck, FlaskConical } from "lucide-react";
 
