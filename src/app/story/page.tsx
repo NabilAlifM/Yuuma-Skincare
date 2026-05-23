@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function StoryPage() {
     return (
-            <div className="pt-20">
+    <div className="pt-20">
       {/* Editorial Hero */}
       <section className="bg-cream-beige/30 py-32 px-6 relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-10 pointer-events-none">
