@@ -33,12 +33,12 @@ export default function Navbar() {
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-warm-white border-b border-cream-beige py-3 shadow-soft" : "bg-transparent py-6"
+        isScrolled ? "bg-background border-b border-pale-almond py-3 shadow-soft" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-[1440px] mx-auto px-10 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-3xl font-serif font-light text-deep-brown tracking-tighter">
+        <Link href="/" className="text-3xl font-serif font-light text-taupe-brown tracking-tighter">
           Yuuma
         </Link>
 
@@ -48,8 +48,8 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.path}
-              className={`text-[11px] tracking-[0.2em] uppercase hover:text-nude-pink transition-colors font-medium ${
-                pathname === link.path ? "text-nude-pink" : "text-deep-brown/80"
+              className={`text-[11px] tracking-[0.2em] uppercase hover:text-warm-nude transition-colors font-medium ${
+                pathname === link.path ? "text-warm-nude" : "text-taupe-brown/80"
               }`}
             >
               {link.name}
@@ -58,21 +58,21 @@ export default function Navbar() {
         </div>
 
         {/* CTA */}
-        <div className="hidden md:flex items-center space-x-8">
-          <button className="text-deep-brown hover:text-nude-pink transition-colors opacity-80 hover:opacity-100">
-            <ShoppingBag size={18} />
-          </button>
-          <Link
-            href="/products"
-            className="bg-nude-pink text-white px-8 py-2.5 rounded-full text-[11px] uppercase tracking-widest font-semibold shadow-sm hover:bg-opacity-90 transition-all"
-          >
-            KONSULTASI SEKARANG
-          </Link>
-        </div>
+        {/* CTA */}
+<div className="hidden md:flex items-center">
+  <a
+    href={`https://wa.me/6281234567890?text=${encodeURIComponent("Halo Yuuma! Saya tertarik untuk konsultasi mengenai produk skincare. Boleh dibantu? 🌿")}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-viridian text-ivory-cream px-8 py-2.5 rounded-full text-[11px] uppercase tracking-widest font-semibold shadow-sm hover:bg-moss-green transition-all"
+  >
+    KONSULTASI SEKARANG
+  </a>
+</div>
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-deep-brown"
+          className="md:hidden text-taupe-brown"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -84,14 +84,14 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="absolute top-full left-0 right-0 bg-warm-white shadow-lg md:hidden flex flex-col p-6 space-y-6"
+          className="absolute top-full left-0 right-0 bg-background shadow-lg md:hidden flex flex-col p-6 space-y-6"
         >
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.path}
               onClick={() => setIsOpen(false)}
-              className="text-lg font-serif text-deep-brown hover:text-nude-pink border-b border-cream-beige pb-2"
+              className="text-lg font-serif text-taupe-brown hover:text-warm-nude border-b border-pale-almond pb-2"
             >
               {link.name}
             </Link>
@@ -99,7 +99,7 @@ export default function Navbar() {
           <Link
             href="/products"
             onClick={() => setIsOpen(false)}
-            className="bg-nude-pink text-warm-white px-6 py-4 rounded-[100px] text-center font-medium"
+            className="bg-warm-nude text-background px-6 py-4 rounded-[100px] text-center font-medium"
           >
             Shop Now
           </Link>

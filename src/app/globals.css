@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --- ATURAN 60-30-10 YUUMA SKINCARE --- */
+  
+  /* 60% Utama (Background Kertas/Kanvas) */
+  --background: #FBF8F3; /* Ivory Cream */
+  
+  /* 30% Sekunder (Teks Utama & Elemen Struktural) */
+  --foreground: #7C6658; /* Taupe Brown */
+  
+  /* 10% Aksen (Tombol Aksi, Sorotan, Ikon) */
+  --accent: #5b8266;     /* Viridian */
+
+  /* --- SISA PALET (Untuk Variasi Hover/Kartu) --- */
+  --color-pale-almond: #E8DDD0;
+  --color-soft-beige: #D0BEAB;
+  --color-warm-nude: #A98E79;
+  --color-moss-green: #859064;
+  --color-tea-green: #dde8b9;
 }
 
+/* Mengintegrasikan Warna & Font ke Tema Tailwind v4 */
 @theme inline {
+  --font-serif: var(--font-cormorant), serif;
+  --font-sans: var(--font-jost), sans-serif;
+  
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ivory-cream: var(--background);
+  --color-taupe-brown: var(--foreground);
+  --color-viridian: var(--accent);
+  
+  --color-pale-almond: var(--color-pale-almond);
+  --color-soft-beige: var(--color-soft-beige);
+  --color-warm-nude: var(--color-warm-nude);
+  --color-moss-green: var(--color-moss-green);
+  --color-tea-green: var(--color-tea-green);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base Style Standar */
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Memastikan Tipografi Judul Elegan */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif) !important;
 }

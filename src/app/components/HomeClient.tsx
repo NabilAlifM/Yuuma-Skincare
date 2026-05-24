@@ -25,11 +25,11 @@ export default function HomeClient() {
           transition={{ duration: 0.8 }}
         >
           <div className="space-y-6">
-            <h1 className="text-[72px] md:text-[100px] font-serif text-deep-brown leading-[0.85] tracking-tight">
+            <h1 className="text-[72px] md:text-[100px] font-serif text-taupe-brown leading-[0.85] tracking-tight">
               Your Skin,<br />
-              <span className="italic text-nude-pink">Your Story.</span>
+              <span className="italic text-warm-nude">Your Story.</span>
             </h1>
-            <p className="text-xl text-deep-brown/70 max-w-md font-light leading-relaxed">
+            <p className="text-xl text-taupe-brown/70 max-w-md font-light leading-relaxed">
               Skincare yang lahir dari klinik. <br />
               Dibuat untuk membantu perjalanan kulitmu menemukan rasa nyaman yang nyata.
             </p>
@@ -37,13 +37,13 @@ export default function HomeClient() {
           <div className="flex gap-6">
             <Link 
               href="/products"
-              className="bg-deep-brown text-white px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-nude-pink transition-all shadow-soft"
+              className="border-taupe-brown text-white px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-moss-green transition-all shadow-soft"
             >
               Explore Products
             </Link>
             <Link 
               href="/story"
-              className="border border-deep-brown text-deep-brown px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-cream-beige transition-all"
+              className="border border-taupe-brown text-taupe-brown px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-pale-almond transition-all"
             >
               Our Journey
             </Link>
@@ -71,7 +71,7 @@ export default function HomeClient() {
       </section>
 
       {/* Brand Value Strip */}
-      <section className="bg-warm-white py-16 px-10 border-y border-cream-beige">
+      <section className="bg-background py-16 px-10 border-y border-pale-almond">
         <div className="max-w-[1440px] mx-auto flex flex-wrap justify-between gap-12">
           {[
             { label: "BPOM Registered" },
@@ -83,7 +83,7 @@ export default function HomeClient() {
               key={i}
               className="flex items-center space-x-3 opacity-70"
             >
-              <div className="w-5 h-5 rounded-full border border-deep-brown flex items-center justify-center text-[8px] font-bold">✓</div>
+              <div className="w-5 h-5 rounded-full border border-taupe-brown flex items-center justify-center text-[8px] font-bold">✓</div>
               <span className="text-[10px] uppercase tracking-[0.2em] font-semibold">{val.label}</span>
             </motion.div>
           ))}
@@ -91,22 +91,22 @@ export default function HomeClient() {
       </section>
 
       {/* Brand Story Teaser */}
-      <section className="bg-warm-white py-32 px-10">
-        <div className="max-w-4xl mx-auto p-12 md:p-20 bg-cream-beige rounded-[3rem] relative overflow-hidden text-center md:text-left">
+      <section className="bg-background py-32 px-10">
+        <div className="max-w-4xl mx-auto p-12 md:p-20 bg-pale-almond rounded-[3rem] relative overflow-hidden text-center md:text-left">
           <div className="relative z-10 space-y-8">
-            <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-nude-pink">The Philosophy</p>
-            <h2 className="text-4xl md:text-5xl font-serif italic leading-tight text-deep-brown">
+            <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-warm-nude">The Philosophy</p>
+            <h2 className="text-4xl md:text-5xl font-serif italic leading-tight text-taupe-brown">
               "Bukan tentang sempurna. <br />
               Tentang nyaman dengan dirimu sendiri."
             </h2>
-            <p className="text-lg text-deep-brown/80 leading-relaxed max-w-xl font-light">
+            <p className="text-lg text-taupe-brown/80 leading-relaxed max-w-xl font-light">
               Yuuma lahir dari pengalaman klinik kecantikan bertahun-tahun. Kami percaya kesehatan kulit adalah investasi emosional terdalam bagi setiap orang.
             </p>
-            <Link href="/story" className="inline-block text-[11px] uppercase tracking-widest font-bold border-b-2 border-nude-pink pb-1 hover:text-nude-pink transition-all">
+            <Link href="/story" className="inline-block text-[11px] uppercase tracking-widest font-bold border-b-2 border-warm-nude pb-1 hover:text-warm-nude transition-all">
               Read Our Origin Story
             </Link>
           </div>
-          <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-sage-green opacity-10 rounded-full blur-[80px]"></div>
+          <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-viridian opacity-10 rounded-full blur-[80px]"></div>
         </div>
       </section>
 
@@ -114,11 +114,11 @@ export default function HomeClient() {
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <motion.div {...FADE_IN}>
-            <p className="text-sage-green font-bold text-[10px] uppercase tracking-widest mb-2">Editor's Choice</p>
-            <h2 className="text-4xl md:text-5xl font-serif text-deep-brown">Our Favorites</h2>
+            <p className="text-viridian font-bold text-[10px] uppercase tracking-widest mb-2">Editor's Choice</p>
+            <h2 className="text-4xl md:text-5xl font-serif text-taupe-brown">Our Favorites</h2>
           </motion.div>
           <motion.div {...FADE_IN}>
-            <Link href="/products" className="text-deep-brown font-medium hover:text-nude-pink flex items-center space-x-2">
+            <Link href="/products" className="text-taupe-brown font-medium hover:text-warm-nude flex items-center space-x-2">
               <span>View All Products</span>
               <ArrowRight size={16} />
             </Link>
@@ -133,26 +133,26 @@ export default function HomeClient() {
       </section>
 
       {/* Skin Concerns Section */}
-      <section className="bg-warm-white py-24 px-6">
+      <section className="bg-background py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div {...FADE_IN} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif text-deep-brown mb-4">Focus by Concern</h2>
-            <p className="text-deep-brown/60">Pilih perawatan yang sesuai dengan kebutuhan unik kulitmu.</p>
+            <h2 className="text-4xl md:text-5xl font-serif text-taupe-brown mb-4">Focus by Concern</h2>
+            <p className="text-taupe-brown/60">Pilih perawatan yang sesuai dengan kebutuhan unik kulitmu.</p>
           </motion.div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
-              { name: "Acne Control", color: "bg-sage-green/10" },
-              { name: "Barrier Repair", color: "bg-nude-pink/10" },
-              { name: "Hydration", color: "bg-cream-beige" },
-              { name: "Anti-Aging", color: "bg-deep-brown/5" }
+              { name: "Acne Control", color: "bg-viridian/10" },
+              { name: "Barrier Repair", color: "bg-warm-nude/10" },
+              { name: "Hydration", color: "bg-pale-almond" },
+              { name: "Anti-Aging", color: "bg-taupe-brown/5" }
             ].map((concern, i) => (
               <motion.div
                 key={i}
                 whileHover={{ y: -5, backgroundColor: "rgba(217, 184, 167, 0.2)" }}
-                className={`${concern.color} p-10 rounded-[12px] text-center cursor-pointer transition-all border border-transparent hover:border-nude-pink/30 flex items-center justify-center`}
+                className={`${concern.color} p-10 rounded-[12px] text-center cursor-pointer transition-all border border-transparent hover:border-warm-nude/30 flex items-center justify-center`}
               >
-                <span className="font-serif text-xl font-medium text-deep-brown">{concern.name}</span>
+                <span className="font-serif text-xl font-medium text-taupe-brown">{concern.name}</span>
               </motion.div>
             ))}
           </div>
@@ -160,9 +160,9 @@ export default function HomeClient() {
       </section>
 
       {/* UGC Strip */}
-      <section className="bg-cream-beige/50 py-24 px-6">
+      <section className="bg-pale-almond/50 py-24 px-6">
         <div className="max-w-7xl mx-auto space-y-12">
-          <motion.h2 {...FADE_IN} className="text-3xl md:text-4xl font-serif text-center text-deep-brown">
+          <motion.h2 {...FADE_IN} className="text-3xl md:text-4xl font-serif text-center text-taupe-brown">
             Kulit Sehat, Cerita Nyata
           </motion.h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
