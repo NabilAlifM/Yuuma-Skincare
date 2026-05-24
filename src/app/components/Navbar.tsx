@@ -44,8 +44,8 @@ export default function Navbar() {
             src="/assets/Logo.png" 
             alt="Yuuma Skincare Logo" 
             width={120} 
-            height={40} 
-            priority // <-- Wajib agar logo di-load paling pertama
+            height={100} 
+            priority 
             className="w-auto h-8 md:h-10 object-contain" 
           />
         </Link>
