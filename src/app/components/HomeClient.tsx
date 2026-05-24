@@ -37,7 +37,7 @@ export default function HomeClient() {
           <div className="flex gap-6">
             <Link 
               href="/products"
-              className="bg-taupe-brown text-white px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-moss-green transition-all shadow-soft"
+              className="bg-viridian text-white px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-moss-green transition-all shadow-soft"
             >
               Explore Products
             </Link>

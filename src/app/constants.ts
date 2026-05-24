@@ -11,61 +11,58 @@ export interface Product {
   description: string;
   price: string;
   image: string;
+  altText: string;
 }
 
 export const PRODUCTS: Product[] = [
   {
     id: "1",
-    name: "Gentle Skin Cleanser",
+    name: "Facial Wash Brightening",
     category: "Cleanser",
-    concern: "Sensitive | All Skin",
-    description: "pH balanced cleanser that respects your skin barrier.",
-    price: "Rp 129.000",
-    image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=600"
+    concern: "Cleansing | Brightening",
+    description: "Pembersih wajah lembut dengan Niacinamide, ekstrak Guayava, Papaya & Saxifraga Sarmentosa untuk mengangkat kotoran sekaligus mencerahkan.",
+    price: "Rp 89.000",
+    image: "/assets/facial-wash.jpeg", // <-- Diubah menjadi /assets/
+    altText: "Botol bening Yuuma Skincare Facial Wash Brightening diletakkan di atas batu alam, dikelilingi bunga aster putih segar dengan latar belakang warna terakota yang hangat."
   },
   {
     id: "2",
-    name: "Barrier Repair Serum",
-    category: "Serum",
-    concern: "Barrier Repair | Hydration",
-    description: "Ceramide NP infusion to strengthen skin resilience.",
-    price: "Rp 249.000",
-    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600"
+    name: "Toner Brightening Moisturizer",
+    category: "Toner",
+    concern: "Hydration | Brightening",
+    description: "Toner penyegar dengan Niacinamide, Citrus Extract, dan Sodium Hyaluronate untuk hidrasi mendalam dan mempersiapkan skin barrier.",
+    price: "Rp 99.000",
+    image: "/assets/toner.png", // <-- Diubah menjadi /assets/
+    altText: "Botol putih tinggi Yuuma Skincare Toner Brightening Moisturizer berdiri tegak di atas batu bertekstur coklat, dihiasi bunga aster putih pada latar belakang hangat."
   },
   {
     id: "3",
-    name: "Luminous Glow Moisturizer",
-    category: "Moisturizer",
-    concern: "Dullness | Hydration",
-    description: "Weightless cream with Niacinamide for instant radiance.",
-    price: "Rp 189.000",
-    image: "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&q=80&w=600"
+    name: "Serum Brightening",
+    category: "Serum",
+    concern: "Dark Spots | Glowing",
+    description: "Serum konsentrat tinggi dengan Niacinamide dan Alpinia Katsumadai Seed Extract untuk memudarkan noda hitam dan meratakan warna kulit.",
+    price: "Rp 129.000",
+    image: "/assets/serum.jpeg", // <-- Diubah menjadi /assets/
+    altText: "Botol kaca pipet Yuuma Skincare Serum Brightening ditempatkan di atas batu alam, diapit oleh bunga aster putih dengan pencahayaan natural bernuansa terakota."
   },
   {
     id: "4",
-    name: "Calming Sun Shield SPF 50",
-    category: "Sunscreen",
-    concern: "UV Protection | Calming",
-    description: "No white cast, water-based formula for tropical skin.",
-    price: "Rp 159.000",
-    image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=600"
+    name: "Night Cream Brightening",
+    category: "Moisturizer",
+    concern: "Anti-Aging | Brightening",
+    description: "Krim malam intensif dengan Niacinamide, Alpha-Arbutin, dan Bakuchiol untuk meregenerasi sel kulit saat kamu tidur.",
+    price: "Rp 149.000",
+    image: "/assets/night-cream.png", // <-- Diubah menjadi /assets/
+    altText: "Botol pump Yuuma Skincare Night Cream Brightening bersandar pada batu alam, dikelilingi rimbunan bunga aster putih di bawah sorotan cahaya hangat."
   },
   {
     id: "5",
-    name: "Advanced Acne Treatment",
-    category: "Treatment",
-    concern: "Acne | Oily Skin",
-    description: "Targeted spot treatment with Salicylic Acid.",
-    price: "Rp 119.000",
-    image: "https://images.unsplash.com/photo-1570194065650-d99fb4b8ccb0?auto=format&fit=crop&q=80&w=600"
-  },
-  {
-    id: "6",
-    name: "Hydrating Essence Mist",
-    category: "Treatment",
-    concern: "Dryness | On-the-go",
-    description: "Refreshing mist with hyaluronic acid and rose water.",
-    price: "Rp 89.000",
-    image: "https://images.unsplash.com/photo-1601049541289-9b1b7abe71a0?auto=format&fit=crop&q=80&w=600"
+    name: "Brightening Morning Duo",
+    category: "Sunscreen & Day Cream",
+    concern: "UV Protection | Brightening",
+    description: "Set perlindungan pagi hari: UV Moist Day Cream & Sunscreen Brightmoist untuk melembapkan sekaligus melindungi dari paparan sinar matahari.",
+    price: "Rp 189.000",
+    image: "/assets/day-sunscreen-set.jpeg", // <-- Diubah menjadi /assets/
+    altText: "Dua jar krim wajah Yuuma Skincare, UV Moist Day Cream dan Sunscreen Brightmoist, disusun bertumpuk di atas batu dengan hiasan bunga aster berlatar belakang hangat bernuansa terakota."
   }
 ];
