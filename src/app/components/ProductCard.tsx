@@ -25,7 +25,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           referrerPolicy="no-referrer"
         />
         <div className="absolute top-4 left-4">
-          <span className="text-[9px] uppercase tracking-widest text-white bg-viridian px-2 py-0.5 rounded-full font-bold">
+          <span className="text-[11px] uppercase tracking-widest text-white bg-viridian px-2 py-1 rounded-full font-bold">
             {product.concern.split(" | ")[0]}
           </span>
         </div>

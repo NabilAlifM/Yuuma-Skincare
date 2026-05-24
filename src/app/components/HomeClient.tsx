@@ -37,7 +37,7 @@ export default function HomeClient() {
           <div className="flex gap-6">
             <Link 
               href="/products"
-              className="border-taupe-brown text-white px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-moss-green transition-all shadow-soft"
+              className="bg-taupe-brown text-white px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-moss-green transition-all shadow-soft"
             >
               Explore Products
             </Link>
@@ -83,8 +83,8 @@ export default function HomeClient() {
               key={i}
               className="flex items-center space-x-3 opacity-70"
             >
-              <div className="w-5 h-5 rounded-full border border-taupe-brown flex items-center justify-center text-[8px] font-bold">✓</div>
-              <span className="text-[10px] uppercase tracking-[0.2em] font-semibold">{val.label}</span>
+              <div className="w-5 h-5 rounded-full border border-taupe-brown flex items-center justify-center text-[14px] font-bold">✓</div>
+              <span className="text-[14px] uppercase tracking-[0.2em] font-semibold">{val.label}</span>
             </motion.div>
           ))}
         </div>
@@ -92,17 +92,17 @@ export default function HomeClient() {
 
       {/* Brand Story Teaser */}
       <section className="bg-background py-32 px-10">
-        <div className="max-w-4xl mx-auto p-12 md:p-20 bg-pale-almond rounded-[3rem] relative overflow-hidden text-center md:text-left">
+        <div className="max-w-4xl mx-auto p-12 md:p-20 bg-taupe-brown rounded-[3rem] relative overflow-hidden text-center md:text-left">
           <div className="relative z-10 space-y-8">
-            <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-warm-nude">The Philosophy</p>
-            <h2 className="text-4xl md:text-5xl font-serif italic leading-tight text-taupe-brown">
+            <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-pale-almond">The Philosophy</p>
+            <h2 className="text-4xl md:text-5xl font-serif italic leading-tight text-pale-almond">
               "Bukan tentang sempurna. <br />
               Tentang nyaman dengan dirimu sendiri."
             </h2>
-            <p className="text-lg text-taupe-brown/80 leading-relaxed max-w-xl font-light">
+            <p className="text-lg text-pale-almond/80 leading-relaxed max-w-xl font-light">
               Yuuma lahir dari pengalaman klinik kecantikan bertahun-tahun. Kami percaya kesehatan kulit adalah investasi emosional terdalam bagi setiap orang.
             </p>
-            <Link href="/story" className="inline-block text-[11px] uppercase tracking-widest font-bold border-b-2 border-warm-nude pb-1 hover:text-warm-nude transition-all">
+            <Link href="/story" className="inline-block text-[11px] text-pale-almond uppercase tracking-widest font-bold border-b-2 border-warm-nude pb-1 hover:text-warm-nude transition-all">
               Read Our Origin Story
             </Link>
           </div>
