@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Jost } from "next/font/google";
-// PERBAIKAN 1: Menambahkan /app/ agar mengarah ke folder src/app/components
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
