@@ -22,7 +22,7 @@ export const PRODUCTS: Product[] = [
     concern: "Cleansing | Brightening",
     description: "Pembersih wajah lembut dengan Niacinamide, ekstrak Guayava, Papaya & Saxifraga Sarmentosa untuk mengangkat kotoran sekaligus mencerahkan.",
     price: "Rp 89.000",
-    image: "/assets/facial-wash.jpeg", // <-- Diubah menjadi /assets/
+    image: "/assets/facial-wash.jpeg", 
     altText: "Botol bening Yuuma Skincare Facial Wash Brightening diletakkan di atas batu alam, dikelilingi bunga aster putih segar dengan latar belakang warna terakota yang hangat."
   },
   {
@@ -32,7 +32,7 @@ export const PRODUCTS: Product[] = [
     concern: "Hydration | Brightening",
     description: "Toner penyegar dengan Niacinamide, Citrus Extract, dan Sodium Hyaluronate untuk hidrasi mendalam dan mempersiapkan skin barrier.",
     price: "Rp 99.000",
-    image: "/assets/toner.png", // <-- Diubah menjadi /assets/
+    image: "/assets/toner.png", 
     altText: "Botol putih tinggi Yuuma Skincare Toner Brightening Moisturizer berdiri tegak di atas batu bertekstur coklat, dihiasi bunga aster putih pada latar belakang hangat."
   },
   {
@@ -42,7 +42,7 @@ export const PRODUCTS: Product[] = [
     concern: "Dark Spots | Glowing",
     description: "Serum konsentrat tinggi dengan Niacinamide dan Alpinia Katsumadai Seed Extract untuk memudarkan noda hitam dan meratakan warna kulit.",
     price: "Rp 129.000",
-    image: "/assets/serum.jpeg", // <-- Diubah menjadi /assets/
+    image: "/assets/serum.jpeg", 
     altText: "Botol kaca pipet Yuuma Skincare Serum Brightening ditempatkan di atas batu alam, diapit oleh bunga aster putih dengan pencahayaan natural bernuansa terakota."
   },
   {
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     concern: "UV Protection | Brightening",
     description: "Set perlindungan pagi hari: UV Moist Day Cream & Sunscreen Brightmoist untuk melembapkan sekaligus melindungi dari paparan sinar matahari.",
     price: "Rp 189.000",
-    image: "/assets/day-sunscreen-set.jpeg", // <-- Diubah menjadi /assets/
+    image: "/assets/day-sunscreen-set.jpeg",
     altText: "Dua jar krim wajah Yuuma Skincare, UV Moist Day Cream dan Sunscreen Brightmoist, disusun bertumpuk di atas batu dengan hiasan bunga aster berlatar belakang hangat bernuansa terakota."
   }
 ];
