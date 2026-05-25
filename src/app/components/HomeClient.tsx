@@ -17,7 +17,7 @@ export default function HomeClient() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="min-h-[90vh] flex flex-col md:grid md:grid-cols-12 items-center px-10 py-12 max-w-[1440px] mx-auto gap-12">
+      <section className="min-h-[90vh] flex flex-col md:grid md:grid-cols-12 items-center px-10 py-12 max-w-360 mx-auto gap-12">
         <motion.div 
           className="md:col-span-7 space-y-12"
           initial={{ opacity: 0, x: -50 }}
@@ -56,7 +56,7 @@ export default function HomeClient() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl w-full h-[600px] md:h-[500px]">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl w-full h-150 md:h-125">
             <Image 
               src="/SetSkincare.jpeg" 
               alt="Soft skincare mood" 
@@ -72,7 +72,7 @@ export default function HomeClient() {
 
       {/* Brand Value Strip */}
       <section className="bg-background py-16 px-10 border-y border-pale-almond">
-        <div className="max-w-[1440px] mx-auto flex flex-wrap justify-between gap-12">
+        <div className="max-w-360 mx-auto flex flex-wrap justify-between gap-12">
           {[
             { label: "BPOM Registered" },
             { label: "Clinically Tested" },
@@ -150,7 +150,7 @@ export default function HomeClient() {
               <motion.div
                 key={i}
                 whileHover={{ y: -5, backgroundColor: "rgba(217, 184, 167, 0.2)" }}
-                className={`${concern.color} p-10 rounded-[12px] text-center cursor-pointer transition-all border border-transparent hover:border-warm-nude/30 flex items-center justify-center`}
+                className={`${concern.color} p-10 rounded-xl text-center cursor-pointer transition-all border border-transparent hover:border-warm-nude/30 flex items-center justify-center`}
               >
                 <span className="font-serif text-xl font-medium text-taupe-brown">{concern.name}</span>
               </motion.div>
@@ -171,7 +171,7 @@ export default function HomeClient() {
                 key={i}
                 {...FADE_IN}
                 transition={{ delay: i * 0.1 }}
-                className="aspect-square rounded-[8px] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 relative" // <-- Tambahkan 'relative' jika ingin aman
+                className="aspect-square rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 relative" // <-- Tambahkan 'relative' jika ingin aman
                 >
                 <Image
                     src={`https://images.unsplash.com/photo-${1550000000000 + i * 1000}?auto=format&fit=crop&q=80&w=600`}
