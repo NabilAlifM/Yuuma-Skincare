@@ -36,9 +36,9 @@ export default function Navbar() {
         isScrolled ? "bg-background border-b border-pale-almond py-3 shadow-soft" : "bg-transparent py-6"
       }`}
     >
-      <div className="max-w-[1440px] mx-auto px-10 flex items-center justify-between">
+      <div className="max-w-360 mx-auto px-10 flex items-center justify-between">
        {/* Logo */}
-        <Link href="/" className="flex-shrink-0 flex items-center">
+        <Link href="/" className="shrink-0 flex items-center">
           <Image 
             src="/assets/Logo.png" 
             alt="Yuuma Skincare Logo" 
