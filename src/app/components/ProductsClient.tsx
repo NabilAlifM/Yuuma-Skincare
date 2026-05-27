@@ -53,7 +53,7 @@ export default function ProductsClient() {
       </section>
 
       {/* Filter Bar */}
-<section className="sticky top-[60px] z-40 bg-background py-5 px-6 border-b border-pale-almond">
+<section className="sticky top-15 z-40 bg-background py-5 px-6 border-b border-pale-almond">
             <div className="max-w-7xl mx-auto flex items-center justify-between gap-6">
           
           {/* Tombol Kategori */}
@@ -62,7 +62,7 @@ export default function ProductsClient() {
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`flex-shrink-0 px-6 md:px-8 py-2 md:py-2.5 rounded-full text-[13px] md:text-sm font-semibold transition-all ${
+                className={`shrink-0 px-6 md:px-8 py-2 md:py-2.5 rounded-full text-[13px] md:text-sm font-semibold transition-all ${
                   filter === cat 
                     ? "bg-viridian text-background shadow-md" 
                     : "bg-pale-almond/40 text-taupe-brown hover:bg-pale-almond/80"
@@ -114,7 +114,7 @@ export default function ProductsClient() {
 
       {/* Quiz Banner */}
       <section className="px-6 mb-24">
-        <div className="max-w-7xl mx-auto bg-pale-almond rounded-[32px] p-12 md:p-24 overflow-hidden relative group">
+        <div className="max-w-7xl mx-auto bg-pale-almond rounded-4xl p-12 md:p-24 overflow-hidden relative group">
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none transform scale-150 rotate-12">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <path fill="#4A3728" d="M38.2,-64.1C51.1,-58.5,64.1,-49.5,72.6,-36.8C81.1,-24.2,85.2,-7.9,82.4,7.4C79.6,22.7,69.9,37,58.3,47.8C46.7,58.6,33.1,65.8,18.8,69.5C4.5,73.1,-10.5,73.2,-25,69C-39.5,64.8,-53.4,56.3,-64.2,44.5C-75,32.7,-82.7,17.5,-83.4,1.8C-84.1,-13.9,-77.8,-30.1,-67.6,-43.3C-57.5,-56.4,-43.4,-66.6,-28.9,-71.1C-14.4,-75.6,0.5,-74.4,14.6,-71.4C28.7,-68.4,42,-63.6,38.2,-64.1Z" transform="translate(100 100)" />

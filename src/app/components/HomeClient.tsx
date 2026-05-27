@@ -27,9 +27,9 @@ export default function HomeClient() {
           <div className="space-y-6">
             <h1 className="text-[72px] md:text-[100px] font-serif text-taupe-brown leading-[0.85] tracking-tight">
               Your Skin,<br />
-              <span className="italic text-warm-nude">Your Story.</span>
+              <span className="italic text-warm-nude text-[72px]">Your Story.</span>
             </h1>
-            <p className="text-xl text-taupe-brown/70 max-w-md font-light leading-relaxed">
+            <p className="text-xl text-taupe-brown/70 max-w-lg font-light leading-relaxed">
               Skincare yang lahir dari klinik. <br />
               Dibuat untuk membantu perjalanan kulitmu menemukan rasa nyaman yang nyata.
             </p>
@@ -37,7 +37,7 @@ export default function HomeClient() {
           <div className="flex gap-6">
             <Link 
               href="/products"
-              className="bg-viridian text-white px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-moss-green transition-all shadow-soft"
+              className="bg-taupe-brown text-white px-10 py-4 rounded-full text-[12px] uppercase tracking-widest font-semibold hover:bg-moss-green transition-all shadow-soft"
             >
               Explore Products
             </Link>
@@ -58,7 +58,7 @@ export default function HomeClient() {
         >
           <div className="relative rounded-3xl overflow-hidden shadow-2xl w-full h-150 md:h-125">
             <Image 
-              src="/SetSkincare.jpeg" 
+              src="/setproduct.jpeg" 
               alt="Soft skincare mood" 
               fill
               priority

@@ -33,19 +33,21 @@ export default function Navbar() {
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-background border-b border-pale-almond py-3 shadow-soft" : "bg-transparent py-6"
+        isScrolled ? "bg-background border-b border-pale-almond py-1 shadow-soft" : "bg-transparent py-6"
       }`}
     >
-      <div className="max-w-360 mx-auto px-10 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-10 flex items-center justify-between">
        {/* Logo */}
-        <Link href="/" className="shrink-0 flex items-center">
+        {/* Logo */}
+        <Link href="/" className="shrink-0 flex items-center -ml-4">
           <Image 
-            src="/assets/Logo.png" 
+            src="/assets/yuuma.png" 
             alt="Yuuma Skincare Logo" 
-            width={120} 
-            height={100} 
+            width={400} // Base width diperbesar
+            height={200} // Base height disesuaikan agar proporsional
             priority 
-            className="w-auto h-8 md:h-10 object-contain" 
+            // PERBAIKAN: Hapus batasan tinggi (h-8), paksa ukuran lewat w (width)
+            className="w-32 md:w-44 lg:w-40 h-auto object-contain" 
           />
         </Link>
 
