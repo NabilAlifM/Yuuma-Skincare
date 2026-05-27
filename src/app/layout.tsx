@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {/* PERBAIKAN 3: Memindahkan class antialiased ke body untuk font yang lebih clean/halus */}
       <body className="flex flex-col min-h-screen antialiased">
         <Navbar />
-        <main className="flex-grow">{children}</main>
+        <main className="grow">{children}</main>
         <Footer />
         <Analytics />
       </body>

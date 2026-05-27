@@ -175,7 +175,7 @@ export default function ProductDetailClient({ product }: Props) {
                     transition={{ delay: 0.2 + i * 0.08 }}
                     className="flex items-start gap-3 text-taupe-brown/80 text-sm font-light leading-relaxed"
                   >
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-viridian flex-shrink-0" />
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-viridian shrink-0" />
                     {b}
                   </motion.li>
                 ))}

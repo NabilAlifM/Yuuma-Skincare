@@ -6,6 +6,7 @@
 import { motion } from "motion/react";
 import { Product } from "../constants";
 import Link from "next/link";
+import Image from "next/image";
 
 
 interface ProductCardProps {
@@ -21,10 +22,11 @@ export default function ProductCard({ product }: ProductCardProps) {
       className="bg-FAF8F5 rounded-2xl overflow-hidden group border border-transparent hover:border-viridian hover:shadow-soft transition-all duration-500"
     >
       <div className="relative aspect-square overflow-hidden bg-pale-almond/20">
-        <img
+        <Image
           src={product.image}
           alt={product.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-700"
           referrerPolicy="no-referrer"
         />
         <div className="absolute top-4 left-4">

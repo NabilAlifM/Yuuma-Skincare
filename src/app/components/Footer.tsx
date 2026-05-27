@@ -9,12 +9,10 @@ import { FaTiktok } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-background border-t border-pale-almond pt-20">
-      <div className="max-w-[1440px] mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-16 pb-20">
+      <div className="max-w-360 mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-16 pb-20">
         <div className="space-y-8">
           <h2 className="text-4xl font-serif font-light text-taupe-brown tracking-tighter">Yuuma</h2>
-          <p className="text-sm text-taupe-brown/60 leading-relaxed font-light italic">
-            "Your Skin, Your Story."
-          </p>
+          <p className="...">&quot;Your Skin, Your Story.&quot;</p>
           <div className="flex space-x-6">
             <Link href="#" className="text-taupe-brown/60 hover:text-warm-nude transition-colors"><IoLogoInstagram size={18} /></Link>
             <Link href="#" className="text-taupe-brown/60 hover:text-warm-nude transition-colors"><IoLogoWhatsapp size={18} /></Link>
@@ -48,7 +46,7 @@ export default function Footer() {
             <input 
               type="email" 
               placeholder="Email address" 
-              className="bg-transparent flex-grow text-sm outline-none placeholder:text-taupe-brown/30" 
+              className="bg-transparent grow text-sm outline-none placeholder:text-taupe-brown/30" 
             />
             <Link href="#" className="text-[10px] uppercase tracking-widest font-bold text-taupe-brown hover:text-warm-nude transition-colors">
               Subscribe
@@ -59,7 +57,7 @@ export default function Footer() {
       
       {/* Trust Bar Section */}
       <div className="bg-background border-t border-pale-almond py-6 px-10">
-        <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center gap-12 w-full">
+        <div className="max-w-360 mx-auto flex flex-col md:flex-row items-center gap-12 w-full">
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center">
             <div className="flex gap-2 items-center opacity-70">
               <div className="w-4 h-4 rounded-full border border-taupe-brown flex items-center justify-center text-[7px] font-bold">✓</div>

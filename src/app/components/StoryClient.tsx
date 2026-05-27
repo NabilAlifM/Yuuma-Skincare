@@ -14,7 +14,6 @@ const FADE_IN = {
 export default function StoryClient() {
     return (
     <div className="pt-20">
-      {/* Editorial Hero */}
      {/* Editorial Hero */}
 <section className="py-32 px-6 relative overflow-hidden min-h-125 flex items-center justify-center">
   
