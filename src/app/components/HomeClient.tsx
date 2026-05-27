@@ -56,16 +56,15 @@ export default function HomeClient() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl w-full h-150 md:h-125">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl w-full h-150 md:h-125 group">
             <Image 
-              src="/setproduct.jpeg" 
-              alt="Soft skincare mood" 
-              fill
-              priority
-
-              className="object-cover"
-              referrerPolicy="no-referrer"
-            />
+  src="/assets/setproduct.png" 
+  alt="Soft skincare mood" 
+  fill
+  priority
+  className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+style={{ objectPosition: "center 70%" }}
+/>
           </div>
         </motion.div>
       </section>
