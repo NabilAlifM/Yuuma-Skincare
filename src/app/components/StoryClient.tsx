@@ -15,55 +15,57 @@ export default function StoryClient() {
     return (
     <div className="pt-20">
      {/* Editorial Hero */}
-<section className="py-32 px-6 relative overflow-hidden min-h-125 flex items-center justify-center">
-  
-  {/* Background Image */}
-  <Image
-    src="/assets/banner.png"
-    alt="Yuuma banner"
-    fill
-    priority
-    className="object-cover object-center"
-  />
+      <section className="py-32 px-6 relative overflow-hidden min-h-[500px] flex items-center justify-center">
+        
+        {/* Background Image */}
+        <Image
+          src="/assets/banner.png"
+          alt="Yuuma banner"
+          fill
+          priority
+          className="object-cover object-center"
+        />
 
-  {/* Overlay */}
-<div className="absolute inset-0 bg-black/40" />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
 
-{/* Konten teks */}
-<div className="max-w-4xl mx-auto text-center relative z-10 space-y-8">
-  <motion.p 
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    className="text-[12px] uppercase tracking-[0.3em] font-bold text-warm-nude"
-  >
-    The Beginning
-  </motion.p>
-  <motion.h1 
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.2, duration: 1 }}
-    className="text-5xl md:text-7xl font-serif text-ivory-cream/80 leading-tight"
-  >
-    Yuuma lahir dari <br />
-    <span className="italic">pengalaman nyata.</span>
-  </motion.h1>
-  <motion.div 
-    initial={{ scaleX: 0 }}
-    animate={{ scaleX: 1 }}
-    transition={{ delay: 0.5, duration: 1 }}
-    className="h-px w-24 bg-taupe-brown/30 mx-auto"
-  />
-</div>
-</section>
+        {/* Konten teks */}
+        <div className="max-w-4xl mx-auto text-center relative z-10 space-y-8">
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-[12px] uppercase tracking-[0.3em] font-bold text-warm-nude"
+          >
+            The Beginning
+          </motion.p>
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 1 }}
+            className="text-5xl md:text-7xl font-serif text-ivory-cream/80 leading-tight"
+          >
+            Yuuma lahir dari <br />
+            <span className="italic">pengalaman nyata.</span>
+          </motion.h1>
+          <motion.div 
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 0.5, duration: 1 }}
+            className="h-px w-24 bg-taupe-brown/30 mx-auto"
+          />
+        </div>
+      </section>
 
       {/* Origin Section */}
       <section className="py-24 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-        <motion.div {...FADE_IN} className="flex-1">
-          <div className="rounded-[40px] overflow-hidden shadow-2xl relative group">
-            <img 
+        <motion.div {...FADE_IN} className="flex-1 w-full">
+          {/* Perbaikan: Mengganti tag <img> dengan <Image /> */}
+          <div className="rounded-[40px] overflow-hidden shadow-2xl relative group h-[400px] md:h-[600px] w-full">
+            <Image 
               src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200" 
               alt="Clinical background" 
-              className="w-full h-150 object-cover group-hover:scale-105 transition-transform duration-1000"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-1000"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-taupe-brown/10"></div>
@@ -81,8 +83,9 @@ export default function StoryClient() {
             <p>
               Yuuma lahir untuk menjembatani kesenjangan tersebut. Kami memformulasikan produk dengan standar klinis namun tetap lembut bagi barrier kulit untuk penggunaan harian.
             </p>
+            {/* Perbaikan: Tanda kutip di-escape */}
             <p className="font-serif italic text-taupe-brown font-medium text-2xl">
-              "Yuuma bukan sekadar produk. Yuuma adalah kelanjutan dari perawatan kamu."
+              &quot;Yuuma bukan sekadar produk. Yuuma adalah kelanjutan dari perawatan kamu.&quot;
             </p>
           </div>
         </motion.div>
@@ -130,7 +133,8 @@ export default function StoryClient() {
                 <span className="text-3xl font-serif italic text-viridian font-bold">{item.year}</span>
               </div>
               <div className="relative grow pb-8 border-l-2 border-viridian/20 pl-12">
-                <div className="absolute top-2 -left-2.25 w-4 h-4 rounded-full bg-viridian shadow-soft"></div>
+                {/* Perbaikan: Tailwind 'left' diubah dari pecahan ke piksel eksplisit */}
+                <div className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-viridian shadow-soft"></div>
                 <h4 className="text-xl font-serif font-bold text-taupe-brown mb-2">{item.event}</h4>
                 <p className="text-taupe-brown/60 leading-relaxed">{item.detail}</p>
               </div>
@@ -142,8 +146,9 @@ export default function StoryClient() {
       {/* Closing Banner */}
       <section className="bg-warm-nude py-24 px-6 text-center text-background">
         <motion.div {...FADE_IN} className="max-w-3xl mx-auto space-y-10">
+          {/* Perbaikan: Tanda kutip di-escape */}
           <h2 className="text-4xl md:text-6xl font-serif italic leading-tight">
-            "Kulit sehat adalah investasi terbaik untuk dirimu."
+            &quot;Kulit sehat adalah investasi terbaik untuk dirimu.&quot;
           </h2>
           <Link 
             href="/products"

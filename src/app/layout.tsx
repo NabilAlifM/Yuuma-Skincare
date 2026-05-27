@@ -3,7 +3,7 @@ import { Cormorant_Garamond, Jost } from "next/font/google";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
-// @ts-ignore: CSS import types may not be declared in this project setup
+// @ts-expect-error: CSS import types may not be declared in this project setup
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({

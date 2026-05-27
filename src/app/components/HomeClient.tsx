@@ -119,8 +119,8 @@ style={{ objectPosition: "center 70%" }}
       <div className="relative z-10 space-y-8">
         <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-pale-almond">The Philosophy</p>
         <h2 className="text-4xl md:text-5xl font-serif italic leading-tight text-pale-almond">
-          "Bukan tentang sempurna. <br />
-          Tentang nyaman dengan dirimu sendiri."
+          &quot;Bukan tentang sempurna. <br />
+          Tentang nyaman dengan dirimu sendiri.&quot;
         </h2>
         <p className="text-lg text-pale-almond/80 leading-relaxed max-w-xl font-light">
           Yuuma lahir dari pengalaman klinik kecantikan bertahun-tahun. Kami percaya kesehatan kulit adalah investasi emosional terdalam bagi setiap orang.

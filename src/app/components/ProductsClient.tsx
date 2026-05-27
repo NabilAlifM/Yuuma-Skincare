@@ -101,7 +101,7 @@ export default function ProductsClient() {
           <div className="py-20 text-center space-y-4">
             <Search size={48} className="mx-auto text-pale-almond mb-4" />
             <h3 className="font-serif text-2xl text-taupe-brown">Produk tidak ditemukan</h3>
-            <p className="text-taupe-brown/60">Tidak ada produk yang cocok dengan pencarian "{searchQuery}".</p>
+            <p className="text-taupe-brown/60">Tidak ada produk yang cocok dengan pencarian &quot;{searchQuery}&quot;.</p>            
             <button 
               onClick={() => { setSearchQuery(""); setFilter("All"); }}
               className="mt-4 px-6 py-2 border border-taupe-brown rounded-full text-sm font-semibold text-taupe-brown hover:bg-pale-almond transition-all"
