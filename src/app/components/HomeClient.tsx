@@ -90,24 +90,50 @@ style={{ objectPosition: "center 70%" }}
       </section>
 
       {/* Brand Story Teaser */}
-      <section className="bg-background py-32 px-10">
-        <div className="max-w-4xl mx-auto p-12 md:p-20 bg-taupe-brown rounded-[3rem] relative overflow-hidden text-center md:text-left">
-          <div className="relative z-10 space-y-8">
-            <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-pale-almond">The Philosophy</p>
-            <h2 className="text-4xl md:text-5xl font-serif italic leading-tight text-pale-almond">
-              "Bukan tentang sempurna. <br />
-              Tentang nyaman dengan dirimu sendiri."
-            </h2>
-            <p className="text-lg text-pale-almond/80 leading-relaxed max-w-xl font-light">
-              Yuuma lahir dari pengalaman klinik kecantikan bertahun-tahun. Kami percaya kesehatan kulit adalah investasi emosional terdalam bagi setiap orang.
-            </p>
-            <Link href="/story" className="inline-block text-[11px] text-pale-almond uppercase tracking-widest font-bold border-b-2 border-warm-nude pb-1 hover:text-warm-nude transition-all">
-              Read Our Origin Story
-            </Link>
-          </div>
-          <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-viridian opacity-10 rounded-full blur-[80px]"></div>
-        </div>
-      </section>
+      {/* Brand Story Teaser */}
+<section className="bg-background py-32 px-10">
+  <div className="max-w-4xl mx-auto relative">
+    
+    {/* Bunga kiri atas — keluar dari border card */}
+    <div className="absolute -top-16 -left-16 w-40 h-40 z-20 pointer-events-none">
+      <Image
+        src="/assets/flower-left.png"
+        alt="decorative flower"
+        fill
+        className="object-contain drop-shadow-lg"
+      />
+    </div>
+
+    {/* Bunga kanan bawah — keluar dari border card */}
+    <div className="absolute -bottom-16 -right-16 w-40 h-40 z-20 pointer-events-none rotate-180">
+      <Image
+        src="/assets/flower-right.png"
+        alt="decorative flower"
+        fill
+        className="object-contain drop-shadow-lg"
+      />
+    </div>
+
+    {/* Card utama */}
+    <div className="p-12 md:p-20 bg-taupe-brown rounded-[3rem] relative overflow-visible text-center md:text-left z-10">
+      <div className="relative z-10 space-y-8">
+        <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-pale-almond">The Philosophy</p>
+        <h2 className="text-4xl md:text-5xl font-serif italic leading-tight text-pale-almond">
+          "Bukan tentang sempurna. <br />
+          Tentang nyaman dengan dirimu sendiri."
+        </h2>
+        <p className="text-lg text-pale-almond/80 leading-relaxed max-w-xl font-light">
+          Yuuma lahir dari pengalaman klinik kecantikan bertahun-tahun. Kami percaya kesehatan kulit adalah investasi emosional terdalam bagi setiap orang.
+        </p>
+        <Link href="/story" className="inline-block text-[11px] text-pale-almond uppercase tracking-widest font-bold border-b-2 border-warm-nude pb-1 hover:text-warm-nude transition-all">
+          Read Our Origin Story
+        </Link>
+      </div>
+      <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-viridian opacity-10 rounded-full blur-[80px]"></div>
+    </div>
+
+  </div>
+</section>
 
       {/* Featured Products */}
       <section className="py-24 px-6 max-w-7xl mx-auto">
