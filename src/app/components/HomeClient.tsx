@@ -90,7 +90,6 @@ style={{ objectPosition: "center 70%" }}
       </section>
 
       {/* Brand Story Teaser */}
-      {/* Brand Story Teaser */}
 <section className="bg-background py-32 px-10">
   <div className="max-w-4xl mx-auto relative">
     
@@ -139,7 +138,9 @@ style={{ objectPosition: "center 70%" }}
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <motion.div {...FADE_IN}>
-            <p className="text-viridian font-bold text-[10px] uppercase tracking-widest mb-2">Editor's Choice</p>
+            <p className="text-viridian font-bold text-[10px] uppercase tracking-widest mb-2">
+              Editor&apos;s Choice
+            </p>
             <h2 className="text-4xl md:text-5xl font-serif text-taupe-brown">Our Favorites</h2>
           </motion.div>
           <motion.div {...FADE_IN}>
