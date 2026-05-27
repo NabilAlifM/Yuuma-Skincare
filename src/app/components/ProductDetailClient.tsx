@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ArrowLeft, Leaf, Sparkles, ShieldCheck, MessageCircle } from "lucide-react";
 import type { Product } from "@/app/constants";
 
-const WA_NUMBER = "6281234567890"; // ganti dengan nomor asli
+const WA_NUMBER = "6282111544412"; // ganti dengan nomor asli
 
 // Map manfaat berdasarkan concern produk
 const BENEFIT_MAP: Record<string, string[]> = {
@@ -85,7 +85,7 @@ export default function ProductDetailClient({ product }: Props) {
   const ingredients = INGREDIENT_MAP[product.id] ?? [];
 
   const waMessage = encodeURIComponent(
-    `Halo Yuuma! Saya tertarik dengan produk *${product.name}* (${product.price}). Boleh tanya-tanya lebih lanjut? 🌿`
+    `Halo Yuuma! Saya tertarik dengan produk *${product.name}* (${product.price}). Boleh tanya-tanya lebih lanjut tentang produk ini? Terima kasih!`
   );
   const waLink = `https://wa.me/${WA_NUMBER}?text=${waMessage}`;
 
@@ -132,40 +132,40 @@ export default function ProductDetailClient({ product }: Props) {
           </motion.div>
 
           {/* Kanan — Detail Produk */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="space-y-8"
-          >
-            {/* Nama & Harga */}
-            <div className="space-y-3 pb-6 border-b border-pale-almond">
-              <p className="text-[11px] uppercase tracking-[0.25em] text-warm-nude font-semibold">
-                {product.concern}
-              </p>
-              <h1 className="text-4xl md:text-5xl font-serif text-taupe-brown leading-tight">
-                {product.name}
-              </h1>
-              <p className="text-3xl font-serif text-taupe-brown font-medium">
-                {product.price}
-              </p>
-            </div>
+ <motion.div
+  initial={{ opacity: 0, x: 30 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.7, delay: 0.1 }}
+  className="space-y-8"
+>
+  {/* Nama & Harga */}
+  <div className="space-y-3 pb-6 border-b border-pale-almond">
+    <p className="text-[11px] uppercase tracking-[0.25em] text-warm-nude font-medium">
+      {product.concern}
+    </p>
+    <h1 className="text-4xl md:text-5xl font-serif text-taupe-brown leading-tight font-semibold">
+      {product.name}
+    </h1>
+    <p className="text-2xl font-sans text-taupe-brown font-medium tracking-wide">
+      {product.price}
+    </p>
+  </div>
 
-            {/* Deskripsi */}
-            <div className="space-y-2">
-              <p className="text-taupe-brown/70 leading-relaxed text-base font-light">
-                {product.description}
-              </p>
-            </div>
+  {/* Deskripsi */}
+  <div className="space-y-2">
+    <p className="text-taupe-brown/60 leading-relaxed text-base font-light">
+      {product.description}
+    </p>
+  </div>
 
-            {/* Manfaat */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <Sparkles size={16} className="text-viridian" />
-                <h3 className="text-[11px] uppercase tracking-widest font-bold text-taupe-brown">
-                  Manfaat Produk
-                </h3>
-              </div>
+  {/* Manfaat */}
+  <div className="space-y-4">
+    <div className="flex items-center gap-2">
+      <Sparkles size={16} className="text-viridian" />
+      <h3 className="text-xl uppercase tracking-widest font-bold text-taupe-brown">
+        Manfaat Produk
+      </h3>
+    </div>
               <ul className="space-y-3">
                 {benefits.map((b, i) => (
                   <motion.li

@@ -5,6 +5,8 @@
 
 import { motion } from "motion/react";
 import { Product } from "../constants";
+import Link from "next/link";
+
 
 interface ProductCardProps {
   product: Product;
@@ -12,6 +14,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
+     <Link href={`/products/${product.id}`}>
     <motion.div
       whileHover={{ y: -8 }}
       transition={{ duration: 0.3 }}
@@ -51,5 +54,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
       </div>
     </motion.div>
+    </Link>
+
   );
 }
