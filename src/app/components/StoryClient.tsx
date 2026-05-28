@@ -27,7 +27,7 @@ export default function StoryClient() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/57" />
 
         {/* Konten teks */}
         <div className="max-w-4xl mx-auto text-center relative z-10 space-y-8">
@@ -73,7 +73,7 @@ export default function StoryClient() {
         </motion.div>
         
         <motion.div {...FADE_IN} className="flex-1 space-y-8">
-          <h2 className="text-4xl font-serif text-taupe-brown leading-snug">
+          <h2 className="text-4xl font-bold font-serif text-taupe-brown leading-snug">
             Bukan sekadar skincare, melainkan perawatan berkelanjutan.
           </h2>
           <div className="space-y-6 text-taupe-brown/70 leading-relaxed text-lg font-light">
@@ -106,9 +106,9 @@ export default function StoryClient() {
                 transition={{ delay: i * 0.2 }}
                 className="space-y-6 md:border-l border-taupe-brown/10 md:pl-8"
               >
-                <span className="text-5xl font-serif italic text-warm-nude opacity-50 block">{pillar.num}</span>
-                <h3 className="text-2xl font-serif text-taupe-brown font-semibold">{pillar.title}</h3>
-                <p className="text-taupe-brown/70 leading-relaxed">{pillar.desc}</p>
+                <span className="text-5xl font-serif italic text-viridian opacity-75 block">{pillar.num}</span>
+                <h3 className="text-2xl font-serif text-taupe-brown font-bold">{pillar.title}</h3>
+                <p className="text-taupe-brown/65 leading-relaxed">{pillar.desc}</p>
               </motion.div>
             ))}
           </div>
