@@ -32,20 +32,21 @@ export default function Navbar() {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-background border-b border-pale-almond py-4 shadow-soft" : "bg-transparent py-6"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-10 flex items-center justify-between">
-       {/* Logo */}
-        <Link href="/" className="shrink-0 flex items-center">
-  <div className="w-24 md:w-32 h-10 relative overflow-hidden">
+    className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      isScrolled ? "bg-background border-b border-pale-almond py-4 shadow-soft" : "bg-transparent py-6"
+    }`}
+  >
+    <div className="max-w-360 mx-auto px-10 flex items-center justify-between">
+      
+      {/* Logo — perlebar container */}
+      <Link href="/" className="shrink-0 flex items-center">
+  <div className="w-32 md:w-40 h-12 relative overflow-hidden">
     <Image 
       src="/assets/yuuma.png" 
       alt="Yuuma Skincare Logo" 
       fill
       priority 
-      className="object-contain scale-300"
+      className="object-contain scale-[2.5] origin-[64%_50%]"
     />
   </div>
 </Link>
@@ -82,7 +83,7 @@ export default function Navbar() {
         </div>
 
         {/* CTA */}
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex items-center space-x-10">
           <a
             href={`https://wa.me/6281234567890?text=${encodeURIComponent("Halo Yuuma! Saya tertarik untuk konsultasi mengenai produk skincare. Boleh dibantu? 🌿")}`}
             target="_blank"
