@@ -31,7 +31,7 @@ export default function HomeClient() {
             </h1>
             <p className="text-xl text-taupe-brown/70 max-w-lg font-light leading-relaxed">
               Skincare yang lahir dari klinik. <br />
-              Dibuat untuk membantu perjalanan kulitmu menemukan rasa nyaman yang nyata.
+              Dibuat untuk membantu perjalanan kulitmu <br />menemukan rasa nyaman yang nyata.
             </p>
           </div>
           <div className="flex gap-6">
@@ -191,25 +191,54 @@ style={{ objectPosition: "center 70%" }}
           <motion.h2 {...FADE_IN} className="text-3xl md:text-4xl font-serif text-center text-taupe-brown">
             Kulit Sehat, Cerita Nyata
           </motion.h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((i) => (
-                <motion.div
-                key={i}
-                {...FADE_IN}
-                transition={{ delay: i * 0.1 }}
-                className="aspect-square rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 relative" // <-- Tambahkan 'relative' jika ingin aman
-                >
-                <Image
-                    src={`https://images.unsplash.com/photo-${1550000000000 + i * 1000}?auto=format&fit=crop&q=80&w=600`}
-                    alt="User reviews"
-                    width={600}  // <-- WAJIB TAMBAHKAN INI (Sesuai dengan &w=600 di URL)
-                    height={600} // <-- WAJIB TAMBAHKAN INI (Sama karena aspect-square)
-                    className="w-full h-full object-cover"
-                    referrerPolicy="no-referrer"
-                />
-                </motion.div>
-            ))}
-            </div>
+
+          {/* Label Before / After */}
+          <motion.div {...FADE_IN} className="relative max-w-4xl mx-auto">
+  <motion.div 
+    className="rounded-3xl overflow-hidden shadow-xl cursor-crosshair"
+    whileHover={{ scale: 1.01 }}
+    transition={{ duration: 0.4 }}
+  >
+    <Image
+      src="/assets/beforeafter.png"
+      alt="Before and after menggunakan Yuuma Skincare"
+      width={1200}
+      height={675}
+      className="w-full object-cover transition-all duration-700 hover:brightness-110 hover:saturate-125"
+    />
+  </motion.div>
+
+      {/* Label Before */}
+      <motion.div 
+        className="absolute top-4 left-6 bg-background/80 backdrop-blur-sm px-4 py-1.5 rounded-full"
+        whileHover={{ opacity: 0 }}
+      >
+        <span className="text-[10px] uppercase tracking-widest font-bold text-taupe-brown/60">
+          Sebelum
+        </span>
+      </motion.div>
+
+      {/* Label After */}
+      <motion.div 
+        className="absolute top-4 right-6 bg-background/80 backdrop-blur-sm px-4 py-1.5 rounded-full"
+        whileHover={{ opacity: 0 }}
+      >
+        <span className="text-[10px] uppercase tracking-widest font-bold text-viridian">
+          Sesudah
+        </span>
+      </motion.div>
+
+      {/* Overlay hint — muncul saat hover */}
+      <div className="absolute inset-0 rounded-3xl bg-taupe-brown/0 hover:bg-taupe-brown/5 transition-all duration-500 flex items-end justify-center pb-6 opacity-0 hover:opacity-100">
+        <span className="bg-background/90 backdrop-blur-sm px-6 py-2 rounded-full text-[10px] uppercase tracking-widest font-bold text-taupe-brown">
+          ✦ Hasil Nyata 30 Hari
+        </span>
+      </div>
+
+      <p className="text-center text-xs text-taupe-brown/40 mt-4 font-light tracking-wide">
+        Hasil nyata pengguna Yuuma Skincare &bull; 30 hari pemakaian rutin
+      </p>
+    </motion.div>
         </div>
       </section>
     </div>
