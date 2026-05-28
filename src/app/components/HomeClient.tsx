@@ -70,24 +70,28 @@ style={{ objectPosition: "center 70%" }}
       </section>
 
       {/* Brand Value Strip */}
-      <section className="bg-background py-16 px-10 border-y border-pale-almond">
-        <div className="max-w-360 mx-auto flex flex-wrap justify-between gap-12">
-          {[
-            { label: "BPOM Registered" },
-            { label: "Clinically Tested" },
-            { label: "Barrier-First Formula" },
-            { label: "Tropical Skin Solution" }
-          ].map((val, i) => (
-            <motion.div 
-              key={i}
-              className="flex items-center space-x-3 opacity-70"
-            >
-              <div className="w-5 h-5 rounded-full border border-taupe-brown flex items-center justify-center text-[14px] font-bold">✓</div>
-              <span className="text-[14px] uppercase tracking-[0.2em] font-semibold">{val.label}</span>
-            </motion.div>
-          ))}
+<section className="bg-background py-16 px-10 border-y border-pale-almond">
+  <div className="max-w-[1440px] mx-auto flex flex-wrap justify-between gap-12">
+    {[
+      { label: "BPOM Registered" },
+      { label: "Clinically Tested" },
+      { label: "Barrier-First Formula" },
+      { label: "Tropical Skin Solution" }
+    ].map((val, i) => (
+      <motion.div 
+        key={i}
+        className="flex items-center space-x-3 opacity-90" // Sedikit dinaikkan opacity-nya agar lebih mewah
+      >
+        <div className="w-5 h-5 rounded-full border border-viridian text-viridian flex items-center justify-center text-[11px] font-bold shrink-0">
+          ✓
         </div>
-      </section>
+        <span className="text-[14px] uppercase tracking-[0.2em] font-semibold text-taupe-brown">
+          {val.label}
+        </span>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
       {/* Brand Story Teaser */}
 <section className="bg-background py-32 px-10">
