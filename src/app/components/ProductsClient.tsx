@@ -52,10 +52,8 @@ export default function ProductsClient() {
         </div>
       </section>
 
-{/* Filter Bar */}
-      {/* Trik Utama: top dibuat pas menempel di bawah navbar (tanpa celah bocor), 
-          tetapi kita tambahkan pt-8 (padding top) agar kontennya terlihat memiliki jarak turun ke bawah secara estetik */}
-      <section className="sticky top-[60px] md:top-[76px] z-40 bg-background pt-6 md:pt-8 pb-5 px-6 border-b border-pale-almond">
+  {/* Filter Bar */}
+      <section className="sticky top-15 md:top-19 z-40 bg-background pt-6 md:pt-8 pb-5 px-6 border-b border-pale-almond">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-6">
           
           {/* Tombol Kategori */}

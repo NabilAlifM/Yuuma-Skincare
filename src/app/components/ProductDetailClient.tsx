@@ -3,8 +3,9 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Leaf, Sparkles, ShieldCheck, MessageCircle } from "lucide-react";
+import { ArrowLeft, Leaf, Sparkles, ShieldCheck, } from "lucide-react";
 import type { Product } from "@/app/constants";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const WA_NUMBER = "6282111544412"; // ganti dengan nomor asli
 
@@ -162,7 +163,7 @@ export default function ProductDetailClient({ product }: Props) {
   <div className="space-y-4">
     <div className="flex items-center gap-2">
       <Sparkles size={16} className="text-viridian" />
-      <h3 className="text-xl uppercase tracking-widest font-bold text-taupe-brown">
+      <h3 className="text-2xl tracking-widest font-black text-taupe-brown">
         Manfaat Produk
       </h3>
     </div>
@@ -186,7 +187,7 @@ export default function ProductDetailClient({ product }: Props) {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Leaf size={16} className="text-viridian" />
-                <h3 className="text-[11px] uppercase tracking-widest font-bold text-taupe-brown">
+                <h3 className="text-2xl  tracking-widest font-black text-taupe-brown">
                   Bahan Aktif Utama
                 </h3>
               </div>
@@ -221,7 +222,7 @@ export default function ProductDetailClient({ product }: Props) {
               whileTap={{ scale: 0.98 }}
               className="flex items-center justify-center gap-3 w-full bg-viridian text-ivory-cream py-5 rounded-full text-[12px] uppercase tracking-widest font-bold hover:bg-moss-green transition-all shadow-lg"
             >
-              <MessageCircle size={18} />
+              <IoLogoWhatsapp size={18} />
               Tanya via WhatsApp
             </motion.a>
 

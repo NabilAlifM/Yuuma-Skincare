@@ -85,7 +85,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center space-x-10">
           <a
-            href={`https://wa.me/6281234567890?text=${encodeURIComponent("Halo Yuuma! Saya tertarik untuk konsultasi mengenai produk skincare. Boleh dibantu? 🌿")}`}
+            href={`https://wa.me/6208170877123?text=${encodeURIComponent("Halo Yuuma! Saya tertarik untuk konsultasi mengenai produk skincare. Boleh dibantu? 🌿")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-viridian text-ivory-cream px-8 py-2.5 rounded-full text-[11px] uppercase tracking-widest font-semibold shadow-sm hover:bg-moss-green transition-all"

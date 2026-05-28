@@ -71,7 +71,7 @@ style={{ objectPosition: "center 70%" }}
 
       {/* Brand Value Strip */}
 <section className="bg-background py-16 px-10 border-y border-pale-almond">
-  <div className="max-w-[1440px] mx-auto flex flex-wrap justify-between gap-12">
+  <div className="max-w-360 mx-auto flex flex-wrap justify-between gap-12">
     {[
       { label: "BPOM Registered" },
       { label: "Clinically Tested" },
