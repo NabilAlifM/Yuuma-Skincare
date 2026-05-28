@@ -51,7 +51,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             {product.price}
           </p>
           <button className="text-[10px] uppercase tracking-wider font-bold text-warm-nude hover:opacity-70 transition-opacity">
-            + Quick Add
+            LIHAT DETAIL —&gt;
           </button>
         </div>
       </div>
