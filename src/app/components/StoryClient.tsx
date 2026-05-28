@@ -117,8 +117,8 @@ export default function StoryClient() {
 
       {/* Timeline Section */}
       <section className="py-32 px-6 max-w-5xl mx-auto font-sans">
-        <motion.h2 {...FADE_IN} className="text-4xl font-serif text-center mb-24">Our Milestone</motion.h2>
-        <div className="space-y-16">
+        <motion.h2 {...FADE_IN} className="text-4xl font-serif text-center text-bold mb-24">Our Milestone</motion.h2>
+        <div className="space-y-16 max-w-2xl mx-auto">
           {[
             { year: "2018", event: "Clinic Founded", detail: "Klinik kecantikan pertama resmi dibuka di Jakarta." },
             { year: "2020", event: "Formulation Phase", detail: "R&D produk dimulai untuk mengisi celah perawatan di rumah." },
@@ -133,7 +133,6 @@ export default function StoryClient() {
                 <span className="text-3xl font-serif italic text-viridian font-bold">{item.year}</span>
               </div>
               <div className="relative grow pb-8 border-l-2 border-viridian/20 pl-12">
-                {/* Perbaikan: Tailwind 'left' diubah dari pecahan ke piksel eksplisit */}
                 <div className="absolute top-2 -left-2.25 w-4 h-4 rounded-full bg-viridian shadow-soft"></div>
                 <h4 className="text-xl font-serif font-bold text-taupe-brown mb-2">{item.event}</h4>
                 <p className="text-taupe-brown/60 leading-relaxed">{item.detail}</p>
