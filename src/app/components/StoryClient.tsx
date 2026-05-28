@@ -15,7 +15,7 @@ export default function StoryClient() {
     return (
     <div className="pt-20">
      {/* Editorial Hero */}
-      <section className="py-32 px-6 relative overflow-hidden min-h-[500px] flex items-center justify-center">
+      <section className="py-32 px-6 relative overflow-hidden min-h-125 flex items-center justify-center">
         
         {/* Background Image */}
         <Image
@@ -60,7 +60,7 @@ export default function StoryClient() {
       <section className="py-24 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
         <motion.div {...FADE_IN} className="flex-1 w-full">
           {/* Perbaikan: Mengganti tag <img> dengan <Image /> */}
-          <div className="rounded-[40px] overflow-hidden shadow-2xl relative group h-[400px] md:h-[600px] w-full">
+          <div className="rounded-[40px] overflow-hidden shadow-2xl relative group h-100 md:h-150 w-full">
             <Image 
               src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200" 
               alt="Clinical background" 
@@ -134,7 +134,7 @@ export default function StoryClient() {
               </div>
               <div className="relative grow pb-8 border-l-2 border-viridian/20 pl-12">
                 {/* Perbaikan: Tailwind 'left' diubah dari pecahan ke piksel eksplisit */}
-                <div className="absolute top-2 -left-[9px] w-4 h-4 rounded-full bg-viridian shadow-soft"></div>
+                <div className="absolute top-2 -left-2.25 w-4 h-4 rounded-full bg-viridian shadow-soft"></div>
                 <h4 className="text-xl font-serif font-bold text-taupe-brown mb-2">{item.event}</h4>
                 <p className="text-taupe-brown/60 leading-relaxed">{item.detail}</p>
               </div>

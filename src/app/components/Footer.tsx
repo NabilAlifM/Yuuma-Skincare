@@ -6,18 +6,27 @@
 import Link from "next/link"
 import { IoLogoInstagram, IoLogoWhatsapp,  } from "react-icons/io5";
 import { FaTiktok } from "react-icons/fa";
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-background border-t border-pale-almond pt-20">
       <div className="max-w-360 mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-16 pb-20">
         <div className="space-y-8">
-          <h2 className="text-4xl font-serif font-light text-taupe-brown tracking-tighter">Yuuma</h2>
+          <Link href="/">
+            <div className="w-56 h-20 relative overflow-hidden">
+              <Image
+                src="/assets/yuuma.png"
+                alt="Yuuma Skincare"
+                fill
+                className="object-contain scale-[3] origin-[56.5%_50%]"
+              />
+            </div>
+          </Link>
           <p className="...">&quot;Your Skin, Your Story.&quot;</p>
           <div className="flex space-x-6">
             <Link href="#" className="text-taupe-brown/60 hover:text-warm-nude transition-colors"><IoLogoInstagram size={18} /></Link>
             <Link href="#" className="text-taupe-brown/60 hover:text-warm-nude transition-colors"><IoLogoWhatsapp size={18} /></Link>
             <Link href="#" className="text-taupe-brown/60 hover:text-warm-nude transition-colors"><FaTiktok size={18} /></Link>
-
           </div>
         </div>
 
