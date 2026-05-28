@@ -73,7 +73,7 @@ export default function Footer() {
       
       {/* Trust Bar Section */}
       <div className="bg-background border-t border-pale-almond py-6 px-10">
-        <div className="max-w-360 mx-auto flex flex-col md:flex-row items-center gap-12 w-full">
+        <div className="max-w-360 mx-auto flex flex-col items-center gap-6 w-full">
           <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center">
             <div className="flex gap-2 items-center opacity-70">
               <div className="w-4 h-4 rounded-full border border-taupe-brown flex items-center justify-center text-[7px] font-bold">✓</div>
@@ -88,7 +88,7 @@ export default function Footer() {
               <span className="text-[10px] uppercase tracking-widest font-semibold">Tropical Skin Solution</span>
             </div>
           </div>
-          <div className="md:ml-auto text-[9px] uppercase tracking-widest opacity-40 font-medium">
+          <div className="text-[9px] uppercase tracking-widest opacity-40 font-medium text-center">
             &copy; {new Date().getFullYear()} Yuuma Skincare. Indonesian clinical heritage.
           </div>
         </div>
