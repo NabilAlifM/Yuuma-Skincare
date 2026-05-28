@@ -25,7 +25,7 @@ export default function Footer() {
           <p className="...">&quot;Your Skin, Your Story.&quot;</p>
           <div className="flex space-x-6">
             <Link href="#" className="text-taupe-brown/60 hover:text-warm-nude transition-colors"><IoLogoInstagram size={18} /></Link>
-            <Link href="#" className="text-taupe-brown/60 hover:text-warm-nude transition-colors"><IoLogoWhatsapp size={18} /></Link>
+            <Link href="wa.me/628170877123" className="text-taupe-brown/60 hover:text-warm-nude transition-colors"><IoLogoWhatsapp size={18} /></Link>
             <Link href="#" className="text-taupe-brown/60 hover:text-warm-nude transition-colors"><FaTiktok size={18} /></Link>
           </div>
         </div>
@@ -49,17 +49,24 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-[11px] uppercase tracking-[0.2em] font-bold text-warm-nude mb-8">Newsletter</h3>
-          <p className="text-sm text-taupe-brown/60 mb-6 font-light">Join our skin diary for clinical tips and product news.</p>
-          <div className="flex border-b border-taupe-brown pb-2">
-            <input 
-              type="email" 
-              placeholder="Email address" 
-              className="bg-transparent grow text-sm outline-none placeholder:text-taupe-brown/30" 
-            />
-            <Link href="#" className="text-[10px] uppercase tracking-widest font-bold text-taupe-brown hover:text-warm-nude transition-colors">
-              Subscribe
-            </Link>
+          <h3 className="text-[11px] uppercase tracking-[0.2em] font-bold text-warm-nude mb-8">Kunjungi Kami</h3>
+          <div className="space-y-4 text-sm text-taupe-brown/60 font-light">
+            <p className="font-semibold text-taupe-brown text-base">Yuuma Skincare Clinic</p>
+            <p className="leading-relaxed">
+              Komplek Bumi Pamulang Pratama Blok B 26A, Bambu Apus, Pamulang, Tangerang Selatan 
+            </p>
+            <p>
+              Senin &ndash; Sabtu: 09.00 &ndash; 20.00 <br />
+              Minggu: 10.00 &ndash; 17.00
+            </p>
+            <a 
+              href="https://maps.app.goo.gl/zD7WzyfLZSNate1k8" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-[10px] uppercase tracking-widest font-bold text-taupe-brown border-b border-warm-nude pb-1 hover:text-warm-nude transition-colors"
+            >
+              Lihat di Maps &rarr;
+            </a>
           </div>
         </div>
       </div>
