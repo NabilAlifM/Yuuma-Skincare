@@ -52,9 +52,11 @@ export default function ProductsClient() {
         </div>
       </section>
 
-      {/* Filter Bar */}
-<section className="sticky top-15 z-40 bg-background py-5 px-6 border-b border-pale-almond">
-            <div className="max-w-7xl mx-auto flex items-center justify-between gap-6">
+{/* Filter Bar */}
+      {/* Trik Utama: top dibuat pas menempel di bawah navbar (tanpa celah bocor), 
+          tetapi kita tambahkan pt-8 (padding top) agar kontennya terlihat memiliki jarak turun ke bawah secara estetik */}
+      <section className="sticky top-[60px] md:top-[76px] z-40 bg-background pt-6 md:pt-8 pb-5 px-6 border-b border-pale-almond">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-6">
           
           {/* Tombol Kategori */}
           <div className="flex overflow-x-auto no-scrollbar gap-3 pb-2 md:pb-0">
@@ -73,7 +75,7 @@ export default function ProductsClient() {
             ))}
           </div>
           
-          {/* Kotak Pencarian (Search Bar) Tetap Aman */}
+          {/* Kotak Pencarian (Search Bar) */}
           <div className="hidden md:flex items-center space-x-2 bg-pale-almond/30 border border-taupe-brown/10 rounded-full px-5 py-2.5 focus-within:ring-1 focus-within:ring-viridian transition-all">
             <Search size={16} className="text-taupe-brown/50" />
             <input 
@@ -87,7 +89,6 @@ export default function ProductsClient() {
 
         </div>
       </section>
-
       {/* Product Grid */}
       <section className="py-24 px-6 max-w-7xl mx-auto min-h-[50vh]">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-12">
