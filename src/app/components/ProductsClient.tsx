@@ -120,15 +120,26 @@ export default function ProductsClient() {
             </svg>
           </div>
           
-          <div className="max-w-2xl relative z-10 space-y-8">
-            <h2 className="text-4xl md:text-5xl font-serif text-taupe-brown">Belum tahu kulitmu <br />butuh apa?</h2>
-            <p className="text-lg text-taupe-brown/70 leading-relaxed font-light">
-              Konsultasikan masalah kulitmu dan temukan rutinitas yang paling tepat hanya dalam 2 menit.
-            </p>
-            <button className="bg-taupe-brown text-background px-10 py-5 rounded-[100px] font-bold text-xs uppercase tracking-widest hover:bg-warm-nude transition-all shadow-soft">
-              Cari Tahu Sekarang
-            </button>
-          </div>
+         <div className="max-w-2xl relative z-10 space-y-8">
+          <h2 className="text-4xl md:text-5xl font-serif text-taupe-brown">
+            Belum tahu kulitmu <br />butuh apa?
+          </h2>
+          <p className="text-lg text-taupe-brown/70 leading-relaxed font-light">
+            Konsultasikan masalah kulitmu dan temukan rutinitas yang paling tepat hanya dalam 2 menit.
+          </p>
+          
+          {/* PERBAIKAN: Mengubah button menjadi tag <a> yang mengarah langsung ke WhatsApp */}
+          <a
+            href={`https://wa.me/6208170877123?text=${encodeURIComponent(
+              "Halo Yuuma Skincare! 🌿 Saya ingin konsultasi gratis untuk mencari tahu produk dan rutinitas skincare yang paling tepat untuk jenis kulit saya. Boleh dibantu?"
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-taupe-brown text-background px-10 py-5 rounded-[100px] font-bold text-xs uppercase tracking-widest hover:bg-warm-nude hover:text-taupe-brown transition-all shadow-soft text-center"
+          >
+            Cari Tahu Sekarang
+          </a>
+        </div>
         </div>
       </section>
 
