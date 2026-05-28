@@ -139,18 +139,18 @@ export default function ProductsClient() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="flex flex-col items-center space-y-3">
               <BadgeCheck className="text-viridian" size={32} />
-              <h4 className="font-serif text-xl font-bold">BPOM Registered</h4>
-              <p className="text-sm text-taupe-brown/50 uppercase tracking-widest font-semibold">100% Certified Safe</p>
+              <h4 className="font-serif text-xl font-bold">BPOM REGISTERED</h4>
+              <p className="text-sm text-taupe-brown/50  tracking-widest font-semibold">100% Certified Safe</p>
             </div>
             <div className="flex flex-col items-center space-y-3">
-              <FlaskConical className="text-warm-nude" size={32} />
-              <h4 className="font-serif text-xl font-bold">Dermatologist Tested</h4>
-              <p className="text-sm text-taupe-brown/50 uppercase tracking-widest font-semibold">Clinically Proven</p>
+              <FlaskConical className="text-viridian" size={32} />
+              <h4 className="font-serif text-xl uppercase font-bold">Dermatologist Tested</h4>
+              <p className="text-sm text-taupe-brown/50  tracking-widest font-semibold">Clinically Proven</p>
             </div>
             <div className="flex flex-col items-center space-y-3">
-              <MapPin className="text-taupe-brown" size={32} />
-              <h4 className="font-serif text-xl font-bold">Tropical Formulation</h4>
-              <p className="text-sm text-taupe-brown/50 uppercase tracking-widest font-semibold">Dibuat untuk Indonesia</p>
+              <MapPin className="text-viridian" size={32} />
+              <h4 className="font-serif text-xl uppercase font-bold">Tropical Formulation</h4>
+              <p className="text-sm text-taupe-brown/50  tracking-widest font-semibold">Dibuat untuk Indonesia</p>
             </div>
         </div>
       </section>
