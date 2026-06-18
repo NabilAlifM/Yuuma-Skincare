@@ -51,7 +51,7 @@ export default function Footer() {
         <div>
           <h3 className="text-[11px] uppercase tracking-[0.2em] font-bold text-warm-nude mb-8">Kunjungi Kami</h3>
           <div className="space-y-4 text-sm text-taupe-brown/60 font-light">
-            <p className="font-semibold text-taupe-brown text-base">Yuuma Skincare Clinic</p>
+            <p className="font-semibold text-taupe-brown text-base">Yuuma Skincare</p>
             <p className="leading-relaxed">
               Komplek Bumi Pamulang Pratama Blok B 26A, Bambu Apus, Pamulang, Tangerang Selatan 
             </p>
